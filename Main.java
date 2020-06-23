@@ -24,9 +24,7 @@ public class Main{
 /
 //        //establish the connection with the database
 //        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/login?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC",
-//                "root", "Flowers123." );
 
-              //  ("jdbc:mysql://localhost:3306/login", "root", "Flowers123.");
         System.out.println("Connected to the database" + connection.getCatalog());
     }//end main
 
