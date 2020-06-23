@@ -1,3 +1,4 @@
+//Elena Voinu
 import helper.DBHandler;
 
 import java.sql.*;
@@ -21,8 +22,7 @@ public class Main{
         readFromDB();
 
 
-//        //load the driver
-//        Class.forName("com.mysql.cj.jdbc.Driver");
+/
 //        //establish the connection with the database
 //        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/login?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC",
 //                "root", "Flowers123." );
