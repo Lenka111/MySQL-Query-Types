@@ -55,7 +55,9 @@ public class Main{
     String address, int age, int id ) throws SQLException{
         String query = "UPDATE user SET firstname = ?, lastname = ?, username = ?, address = ?, age = ? WHERE userid = ?";
         try {
+            //call use column method
             useColumns(firstname, secondname, username, address, age, query);
+            
             preparedStatement.setInt(6, id);
             preparedStatement.executeUpdate();
             preparedStatement.close();
@@ -77,7 +79,7 @@ public class Main{
         }
     }
 
-    //to avoid duplicate code i created a method for adding users and to update the database
+    //to avoid duplicate code i created a method to be used in adding users and  update user in the database
     private static void useColumns(String firstname, String secondname, String username, String address, int age, String insert) throws SQLException {
         preparedStatement = (PreparedStatement) connection.prepareStatement(insert);
         preparedStatement.setString(1, firstname);
