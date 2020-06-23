@@ -20,11 +20,6 @@ public class Main{
         delete(3);
         readFromDB();
 
-
-/
-//        //establish the connection with the database
-//        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/login?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC",
-
         System.out.println("Connected to the database" + connection.getCatalog());
     }//end main
 
