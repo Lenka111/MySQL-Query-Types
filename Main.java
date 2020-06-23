@@ -1,6 +1,5 @@
 //Elena Voinu
 import helper.DBHandler;
-
 import java.sql.*;
 import java.util.zip.CheckedOutputStream;
 
@@ -15,8 +14,8 @@ public class Main{
 
         dbHandler = new DBHandler();
         connection = dbHandler.getConnection();
-      //  writeToDB("Vicky", "Voinu", "vikusik", "Natoma ave", 8);
-    //    readFromDB();
+        writeToDB("Vicky", "Voinu", "vikusik", "Natoma ave", 8);
+        readFromDB();
         updateDB("Elena", "Voinu", "lenka111", "1234 mission Valleya", 33, 6);
         delete(3);
         readFromDB();
